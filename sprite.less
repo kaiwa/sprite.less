@@ -1,0 +1,7 @@
+.sprite(@image, @width, @item, @items: '{}') {
+    @json  : '(@{items})';
+    @offset: ~`typeof(@{item}) == 'number' ? (@{item} - 1) * parseInt("-@{width}") + 'px' : (eval(@{json})[@{item}] - 1) * parseInt("-@{width}") + 'px'`;
+
+    background: url("@{image}") 0px 0px no-repeat;
+    background-position: 0 @offset;
+}
