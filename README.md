@@ -1,12 +1,12 @@
 sprite.less
-==================
+===========
 
-1. Import
-------------------
+Import
+------
 
 	@import 'sprite.less';
 
-2. Create your sprite
+Create your sprite
 ------------------
 
 Example is based on a 16 px wide, vertical sprite.
@@ -24,8 +24,8 @@ Example is based on a 16 px wide, vertical sprite.
         .sprite('../images/mySprite.png', 16px, @item);
     }
 
-3. Use your sprite
-------------------
+Use your sprite
+---------------
 
 ### By name
 
@@ -39,8 +39,8 @@ Example is based on a 16 px wide, vertical sprite.
     #socialNetwork li#facebook a { .mySprite(2) }
     ...
 
-4. Output
-------------------
+Output
+------
 
     #socialNetwork li#twitter a{background:url("../images/mySprite.png") 0px 0px no-repeat;background-position:0 0px;}
     #socialNetwork li#facebook a{background:url("../images/mySprite.png") 0px 0px no-repeat;background-position:0 -16px;}
