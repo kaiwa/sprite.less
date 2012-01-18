@@ -27,8 +27,8 @@ Example is based on a 16 px wide, vertical sprite.
 ### 2.1 By name
 
 This way you will create a sprite with named items which has two advantages:
-  - When addressing the items with their names your CSS might be easier to understand
-  - If (can't imagine such case.. but..) the position of an item changes within the sprite, you need to adjust that only in the sprite definition, not everywhere across your code
+  1. When addressing the items with their names your CSS might be easier to understand
+  2. If (can't imagine such case.. but..) the position of an item changes within the sprite, you need to adjust that only in the sprite definition, not everywhere across your code
 
     .socialNetworkSprite(@item) {
         /* Define name and position in sprite */
