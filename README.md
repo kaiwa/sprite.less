@@ -29,13 +29,13 @@ Example is based on a 16 px wide, vertical sprite.
 This way you will create a sprite with named items which has two advantages:
   1. When addressing the items with their names your CSS might be easier to understand
   2. If (can't imagine such case.. but..) the position of an item changes within the sprite, you need to adjust that only in the sprite definition, not everywhere across your code
-
-    .socialNetworkSprite(@item) {
-        /* Define name and position in sprite */
-        @items: '{"twitter": 1, "facebook": 2, "google": 3, "skype": 4 }';
-        .sprite('../images/mySprite.png', 16px, @item, @items);
-    }
-
+```
+     .socialNetworkSprite(@item) {
+         /* Define name and position in sprite */
+         @items: '{"twitter": 1, "facebook": 2, "google": 3, "skype": 4 }';
+         .sprite('../images/mySprite.png', 16px, @item, @items);
+     }
+```
 ### 2.2 By number
 
 If it is too much work for you to name every single sprite item, simply omit the names. In this case you will address the sprite items by their positions in the sprite.
